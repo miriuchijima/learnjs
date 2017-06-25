@@ -9,7 +9,7 @@ learnjs.showView = function(hash){
     var routes = {
         '#problem' : learnjs.problemView
     };
-    vsr hashParts = hash.split('-');
+    var hashParts = hash.split('-');
     var viewFn = routes[hashParts[0]];
     if (viewFn){
      $('.view-container').empty().append(viewFn(hashParts[1]));    
