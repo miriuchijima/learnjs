@@ -2,7 +2,7 @@
 var learnjs = {};
 
 learnjs.problemView = function(problemNumber){
-    var title = 'Problem #' + problemNumber + 'Coming soon!';
+    var title = 'Problem #' + problemNumber + ' Coming soon!';
     return $('<div class="problem-view">').text(title);
 }
 
