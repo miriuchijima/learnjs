@@ -20,4 +20,10 @@ describe('LearnJS',function(){
             expect(view.text()).toEqual('Problem #1 Coming soon!');
         });
     });
+    
+    it('invokes the router when loaded',function(){
+        spyOn(learnjs, 'showView');
+        learnjs.appOnReady();
+        expect(learnjs.showView).toHaveBeenCalledWith(window.location.hash);
+    });
 });
